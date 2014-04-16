@@ -1,0 +1,71 @@
+#headerimg
+{
+	width: 100%;
+	margin-right: 0px;
+	display: block;
+	padding-top: 50px;
+}
+
+body
+{
+	margin: 0px 0px 0px 0px;
+	background: #DDDDDD;
+}
+
+
+.navbar
+{
+	background: black;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+}
+
+.navbar #title
+{
+	float:left;
+	color: white;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 50px;
+	line-height: 50px;
+	font-family: Arial, sans-serif;
+}
+
+.navbar > a
+{
+	color: white;
+	display: inline-block;
+	margin: 0px 50px 50px 0px;
+	float: right;
+	height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 30px;
+	padding: 0px 10px 0px 10px;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navbar > a:hover
+{
+	background: #111111;	
+	color: #99DD99;
+}
+
+.main
+{
+	background: white;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: -20px;
+	padding: 5px 5px 5px 5px;
+}
+
+#mainTitle
+{
+	margin: 0px 0px 5px 10px;
+	font-family: Arial, sans-serif;
+}
