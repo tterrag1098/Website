@@ -3,7 +3,7 @@
 	width: 100%;
 	margin-right: 0px;
 	display: block;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 body
@@ -17,7 +17,7 @@ body
 {
 	background: black;
 	width: 100%;
-	height: 50px;
+	height: 70px;
 	position: fixed;
 }
 
@@ -27,9 +27,9 @@ body
 	color: white;
 	display: inline-block;
 	margin-top: 5px;
-	margin-left: 5px;
-	height: 50px;
-	line-height: 50px;
+	margin-left: 10px;
+	height: 70px;
+	line-height: 70px;
 	font-family: Arial, sans-serif;
 }
 
@@ -40,7 +40,7 @@ body
 	margin: 0px 50px 50px 0px;
 	float: right;
 	height: 30px;
-	margin-top: 20px;
+	margin-top: 40px;
 	text-align: center;
 	line-height: 30px;
 	padding: 0px 10px 0px 10px;
