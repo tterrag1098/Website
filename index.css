@@ -30,23 +30,23 @@ body
 	margin-left: 10px;
 	height: 70px;
 	line-height: 70px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .navbar > a
 {
 	color: white;
 	display: inline-block;
-	margin: 0px 50px 50px 0px;
+	margin: 0px 40px 40px 0px;
 	float: right;
 	height: 30px;
 	margin-top: 40px;
 	text-align: center;
 	line-height: 30px;
 	padding: 0px 10px 0px 10px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
-	font-weight: bold;
+	background: black;
 }
 
 .navbar > a:hover
@@ -67,5 +67,5 @@ body
 #mainTitle
 {
 	margin: 0px 0px 5px 10px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
