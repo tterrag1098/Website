@@ -1,0 +1,24 @@
+.author[href$="Awade33"] {
+	color: #008800;
+	font-weight: bold
+}
+a[href$="http://www.reddit.com/user/canilsen"], a[href$="/user/canilsen"] {
+	font-weight: bold !important;
+	color: #008800 !important
+}
+a[href$="http://www.reddit.com/user/AutoModerator"], a[href$="/user/AutoModerator"] {
+	font-weight: bold !important;
+	color: #008800 !important
+}
+a[href$="http://www.reddit.com/user/Greypo"], a[href$="/user/canilsen"] {
+	font-weight: bold !important;
+	color: #008800 !important
+}
+a[href$="http://www.reddit.com/user/_Grum"], a[href$="/user/_Grum"] {
+	font-weight: bold !important;
+	color: #FF00DC !important
+}
+a[href$="http://www.reddit.com/user/drayshak"], a[href$="/user/drayshak"] {
+	font-weight: bold !important;
+	color: #FF00DC !important
+}
