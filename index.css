@@ -1,71 +1,8 @@
-#headerimg
+.bodyText
 {
-	width: 100%;
-	margin-right: 0px;
-	display: block;
-	padding-top: 70px;
-}
-
-body
-{
-	margin: 0px 0px 0px 0px;
-	background: #DDDDDD;
-}
-
-
-.navbar
-{
-	background: black;
-	width: 100%;
-	height: 70px;
-	position: fixed;
-}
-
-.navbar #title
-{
-	float:left;
-	color: white;
-	display: inline-block;
-	margin-top: 5px;
-	margin-left: 10px;
-	height: 70px;
-	line-height: 70px;
-	font-family: 'Roboto', sans-serif;
-}
-
-.navbar > a
-{
-	color: white;
-	display: inline-block;
-	margin: 0px 40px 40px 0px;
-	float: right;
-	height: 30px;
-	margin-top: 40px;
-	text-align: center;
-	line-height: 30px;
-	padding: 0px 10px 0px 10px;
-	font-family: 'Roboto', sans-serif;
-	text-decoration: none;
-	background: black;
-}
-
-.navbar > a:hover
-{
-	background: #111111;	
-	color: #99DD99;
-}
-
-.main
-{
-	background: white;
+	background-color: gray;
+	border: 10px 10px 10px 10px;
+	border-color: red;
 	width: 80%;
-	margin-left: 10%;
-	margin-top: -20px;
-	padding: 5px 5px 5px 5px;
-}
-
-#mainTitle
-{
-	margin: 0px 0px 5px 10px;
-	font-family: 'Roboto', sans-serif;
+	height: 100%;
 }
