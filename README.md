@@ -1,4 +1,4 @@
-MDwiki
+Website
 ======
 
-See http://www.mdwiki.info/ for more documentation and details.
+My website that is live at http://tterrag.com. Currently a massive WIP.
