@@ -7,8 +7,8 @@
   * [ttCore](mods.md/ttCore.md)
   * [Custom Things](mods/customthings.md)
 
-[Maven](pages/maven.md)
-[IRC](irc.md)
+[Maven](misc/maven.md)
+[IRC](misc/irc.md)
 [ ](#)
 [GitHub](https://github.com/tterrag1098)
 
