@@ -1,2 +1,2 @@
-$file = fopen( '/home/kovshenin/git-pull-requests/example.org', 'w+' );
+$file = fopen( '/home/tterrag/git-pull-requests/Website', 'w+' );
 fclose( $file );
