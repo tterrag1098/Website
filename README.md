@@ -1,4 +1,4 @@
-website
-=======
+MDwiki
+======
 
-My website at http://tterrag.com (This repo is not currently the live site)
+See http://www.mdwiki.info/ for more documentation and details.
