@@ -15,4 +15,4 @@ Yes, I have rules. Don't worry, there's not too many.
 ## WebChat
 
 Remember, this is a ***LIVE*** chat with other real people. It is not anyone's job to answer your question, so be patient, always.
-<iframe src="http://webchat.esper.net/?nick=ServerTool...&channels=SMT&fg_color=000000&fg_sec_color=4F4F4F&bg_color=F2F2F2&prompt=1" width="85%" height="500"></iframe>
+<iframe src="http://webchat.esper.net/?nick=websiteuser....&channels=SMT&fg_color=000000&fg_sec_color=000000&bg_color=EEEEFF&prompt=1" width="100%" height="600"></iframe>
