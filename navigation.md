@@ -12,7 +12,7 @@
   * [All](wyldmods/index.md)
   * [KitchenCraft](wyldmods/kc.md)
   * [Simple Achievements](wyldmods/sa.md)
-  * [Tool Utilities]
+  * [Tool Utilities](wyldmods/tu.md)
 
 [Maven](misc/maven.md)
 [IRC](misc/irc.md)
