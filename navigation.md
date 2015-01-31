@@ -13,6 +13,8 @@
   * [KitchenCraft](wyldmods/kc.md)
   * [Simple Achievements](wyldmods/sa.md)
   * [Tool Utilities](wyldmods/tu.md)
+  - - - -
+  * [Contributions](misc/contributions.md)
 
 [Maven](misc/maven.md)
 [Documentation](misc/docs.md)
