@@ -15,6 +15,7 @@
   * [Tool Utilities](wyldmods/tu.md)
 
 [Maven](misc/maven.md)
+[Documentation](misc/docs.md)
 [IRC](misc/irc.md)
 [ ](#)
 [GitHub](https://github.com/tterrag1098)

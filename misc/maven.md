@@ -1,6 +1,6 @@
 # Maven
 
-I host a few of my mods, as well as some others', on a personal maven server. You can browse that server [here](maven.tterrag.com)!
+I host a few of my mods, as well as some others', on a personal maven server. You can browse that server [here](http://maven.tterrag.com)!
 
 ## How do I use maven?
 
