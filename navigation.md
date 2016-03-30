@@ -16,6 +16,7 @@
   - - - -
   * [Contributions](misc/contributions.md)
 
+[Jenkins](http://ci.tterrag.com)
 [Maven](misc/maven.md)
 [Documentation](misc/docs.md)
 [IRC](misc/irc.md)
