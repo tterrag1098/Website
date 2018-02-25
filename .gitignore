@@ -1,4 +1,3 @@
 /bin
 *.exe
 *.php
-!/k9/*.php
