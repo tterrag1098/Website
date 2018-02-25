@@ -14,8 +14,22 @@
     body {
       -webkit-font-smoothing: antialiased;
       font-family: "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
-      background-color: #eee;
-      color: #111;
+      background-color: rgb(53, 56, 60);
+      color: #eee;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #aaf;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #content p, #content li {
+      color: #bbb;
     }
 
     nav {
@@ -23,13 +37,13 @@
     }
 
     nav a {
-      text-decoration:  none;
-      color: #888;
+      color: #999;
       padding-left: 20px;
     }
 
     nav a:hover {
-      color: black;
+      color: white;
+      text-decoration: none;
     }
 
     li {
@@ -43,6 +57,7 @@
     #content {
       max-width: 1000px;
       margin: auto;
+      margin-bottom: 100px;
     }
 
     #content p:first-child {
