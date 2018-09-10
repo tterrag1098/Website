@@ -31,7 +31,7 @@
 <head>
   <meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../root.css">
 	<link rel="stylesheet" type="text/css" href="lang2json.css">
 
   <title>tterrag - .lang to .json</title>
