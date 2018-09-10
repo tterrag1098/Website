@@ -22,6 +22,8 @@
 		$json = substr($json, 0, strlen($json) - 3) . "\n}";
 		return $json;
 	}
+
+	$content = $_POST['content'] ?: null;
 ?>
 <!doctype html>
 
@@ -123,14 +125,14 @@
   <div id="content">
 		<form id="form" method="post" action=".">
 		</form>
-		<textarea form="form" name="content" placeholder="Paste lang file here"></textarea>
+		<textarea form="form" name="content" placeholder="Paste lang file here"><?= $content ?: '' ?></textarea>
 		<input form="form" type="submit" name="submit" value="Convert"/>
 
 <?php
-		if (isset($_POST['content']) && strlen($_POST['content']) > 0) {
+		if ($content && strlen($content) > 0) {
 ?>
 			<h4>Result:</h4>
-			<textarea id="result" readonly="true"><?= convert($_POST['content']) ?></textarea>
+			<textarea id="result" readonly="true"><?= convert($content) ?></textarea>
 			<button id="copybutton" onclick="copyResult()">Copy to Clipboard</button>
 
 			<script type="text/javascript">
