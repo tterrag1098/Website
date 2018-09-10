@@ -64,9 +64,18 @@
 <body>
   <div id="mobile-wrapper">
   <div id="content">
+		<h2>What is this?</h2>
+		<p>
+			This is a tool to convert .lang files (used for Minecraft mods and resource packs up to version 1.12.2)
+			to the new format in 1.13+, which uses .json files.
+		</p><p>
+			In addition to simply converting the syntax, it performs some common cleanup actions, such as removing
+			#PARSE_ESCAPES entirely, replacing "tile." with "block.", and removing all ".name" suffixes.
+		</p>
+		<h4>Input:</h4>
 		<form id="form" method="post" action=".">
 		</form>
-		<textarea form="form" name="content" placeholder="Paste lang file here"><?= $content ?: '' ?></textarea>
+		<textarea form="form" name="content" placeholder="Paste .lang file contents here"><?= $content ?: '' ?></textarea>
 		<input form="form" type="submit" name="submit" value="Convert"/>
 
 <?php
