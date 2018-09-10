@@ -1,3 +1,7 @@
+#content {
+	margin-bottom: 100px;
+}
+
 #content p:first-child {
 	margin: auto;
 	width: 40%;
