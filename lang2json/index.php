@@ -127,7 +127,7 @@
 		<input form="form" type="submit" name="submit" value="Convert"/>
 
 <?php
-		if (isset($_POST['content'])) {
+		if (isset($_POST['content']) && strlen($_POST['content']) > 0) {
 ?>
 			<h4>Result:</h4>
 			<textarea id="result" readonly="true"><?= convert($_POST['content']) ?></textarea>
