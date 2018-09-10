@@ -1,0 +1,56 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: "Roboto", "lucida grande", tahoma, verdana, arial, sans-serif;
+	background-color: rgb(53, 56, 60);
+	color: #eee;
+	font-size: 0.9em;
+}
+
+a {
+	color: #aaf;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#content p, #content li {
+	color: #bbb;
+}
+
+nav {
+	margin-top: 15px;
+}
+
+nav a, nav span {
+	color: #999;
+	padding-left: 20px;
+}
+
+nav a.selected {
+	color: #eee;
+}
+
+nav span.separator::after {
+	content: "|";
+}
+
+nav a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+#mobile-wrapper {
+	margin: 30px;
+}
+
+#content {
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 100px;
+}

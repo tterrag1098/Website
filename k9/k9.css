@@ -1,0 +1,13 @@
+#content p:first-child {
+	margin: auto;
+	width: 40%;
+	height: auto;
+	text-align: center;
+}
+
+#content img {
+	text-align:  center;
+	margin: auto;
+	height: inherit;
+	width: inherit;
+}
