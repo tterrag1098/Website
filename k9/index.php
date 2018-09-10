@@ -9,7 +9,7 @@
 
   <title>tterrag - K9</title>
   <meta name="author" content="tterrag">
-
+  <meta name="description" content="A Discord bot with some useful commands.">
   <style>
     body {
       -webkit-font-smoothing: antialiased;
