@@ -14,6 +14,8 @@
 				$key = preg_replace("/^tile\./", "block.", $key);
 				$key = preg_replace("/\.name$/", "", $key);
 				$val = trim(substr($line, $eqpos + 1));
+				$val = str_replace('\\', '\\\\', $val);
+				$val = str_replace('"', '\"', $val);
 				$json .= "    \"$key\": \"$val\",\n";
 			} else {
 				$json .= "\n";
