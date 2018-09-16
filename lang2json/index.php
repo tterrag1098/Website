@@ -19,7 +19,8 @@
 				$json .= "\n";
 			}
 		}
-		$json = substr($json, 0, strlen($json) - 3) . "\n}";
+		$json = trim($json);
+		$json = substr($json, 0, strlen($json) - 1) . "\n}";
 		return $json;
 	}
 
