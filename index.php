@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="root.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 
-  <title>tterrag - .lang to .json</title>
+  <title>tterrag - Home</title>
   <meta name="author" content="tterrag">
 	<meta name="theme-color" content="#4e9745">
 
