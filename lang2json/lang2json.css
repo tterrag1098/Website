@@ -10,9 +10,6 @@
 
 #content input[type="submit"], button {
 	width: 100%;
-	background-color: #ddd;
 	margin-bottom: 7px;
 	height: 30px;
-	font-size: 1.2em;
-	font-family: Consolas, monospace;
 }

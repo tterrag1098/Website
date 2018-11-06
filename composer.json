@@ -1,5 +1,6 @@
 {
     "require": {
-        "erusev/parsedown": "1.6.4"
+        "erusev/parsedown": "1.6.4",
+        "parsecsv/php-parsecsv": "^1.1"
     }
 }
