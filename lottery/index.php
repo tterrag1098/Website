@@ -2,7 +2,7 @@
 require('../vendor/autoload.php');
 
 $content = isset($_POST['content']) ? $_POST['content'] : null;
-$mintime = isset($_POST['time']) ? $_POST['time'] : date("Y-m-d\TH:i:s", intdiv(time() - 3600, 3600) * 3600); // Default to on the hour at least 1 hour ago
+$mintime = isset($_POST['time']) ? $_POST['time'] : gmdate("Y-m-d\TH:i:s", intdiv(time() - 3600, 3600) * 3600); // Default to on the hour at least 1 hour ago
 $minamnt = isset($_POST['min-amount']) ? $_POST['min-amount'] : 20;
 function getEligibleDonations() {
 	global $content, $mintime, $minamnt;
