@@ -4,8 +4,11 @@ require('../vendor/autoload.php');
 $content = isset($_POST['content']) ? $_POST['content'] : null;
 $mintime = isset($_POST['time']) ? $_POST['time'] : gmdate("Y-m-d\TH:i:s", intdiv(time() - 3600, 3600) * 3600); // Default to on the hour at least 1 hour ago
 $minamnt = isset($_POST['min-amount']) ? $_POST['min-amount'] : 20;
+$prevwinners = isset($_POST['prev-winners']) ? $_POST['prev-winners'] : '';
 function getEligibleDonations() {
-	global $content, $mintime, $minamnt;
+	global $content, $mintime, $minamnt, $prevwinners;
+
+	$blacklist = explode(",", $prevwinners);
 
 	$time = strtotime($mintime);
 
@@ -18,9 +21,11 @@ function getEligibleDonations() {
 
 	$res = [];
 	foreach ($eligible as $donation) {
-		for ($i = 0; $i < $donation['amount'] / $minamnt; $i++) {
-			// echo $donation['donor_name'] . ': ' . $donation['amount'] . '<br>';
-			$res[] = $donation;
+		if (!in_array($donation['donor_name'], $blacklist)) {
+			for ($i = 0; $i < $donation['amount'] / $minamnt; $i++) {
+				// echo $donation['donor_name'] . ': ' . $donation['amount'] . '<br>';
+				$res[] = $donation;
+			}
 		}
 	}
 	return $res;
@@ -79,8 +84,11 @@ function getEligibleDonations() {
 				<span id="local-time"></span>
 			</div>
 			<div>
-				Minimum donation amount: $<input form="form" name="min-amount" type="number" min="1" step="1" value="<?= $minamnt ?>">
+				Minimum donation amount: $<input form="form" name="min-amount" type="number" min="1" step="1" value="<?= $minamnt ?>"/>
 				<input form="form" type="submit" name="submit" value="Spin That Wheel!"/>
+			</div>
+			<div>
+				Previous winners: <br><textarea form="form" name="prev-winners" placeholder="Comma separated names to exclude"><?= $prevwinners ?: '' ?></textarea>
 			</div>
 
 <?php
