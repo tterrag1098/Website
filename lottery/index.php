@@ -35,14 +35,13 @@ function getEligibleDonations() {
 		$res = [];
 
 		foreach ($eligible as $donation) {
-			$name = $donation['donor_name'];
-			if (!array_key_exists($name, $res)) {
-				$res[$name] = $donation;
+			$email = $donation['email'];
+			if (!array_key_exists($email, $res)) {
+				$res[$email] = $donation;
 			} else {
-				$res[$name]['amount'] += $donation['amount'];
+				$res[$email]['amount'] += $donation['amount'];
 			}
 		}
-		var_dump($res);
 		$res = array_values($res);
 	}
 
