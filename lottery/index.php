@@ -5,8 +5,10 @@ $content = isset($_POST['content']) ? $_POST['content'] : null;
 $mintime = isset($_POST['time']) ? $_POST['time'] : gmdate("Y-m-d\TH:i:s", intdiv(time() - 3600, 3600) * 3600); // Default to on the hour at least 1 hour ago
 $minamnt = isset($_POST['min-amount']) ? $_POST['min-amount'] : 20;
 $prevwinners = isset($_POST['prev-winners']) ? $_POST['prev-winners'] : '';
+$final_prize_mode = isset($_POST['final-prize-mode']) ? $_POST['final-prize-mode'] : false;
+
 function getEligibleDonations() {
-	global $content, $mintime, $minamnt, $prevwinners;
+	global $content, $mintime, $minamnt, $prevwinners, $final_prize_mode;
 
 	$blacklist = explode(",", $prevwinners);
 
@@ -18,16 +20,32 @@ function getEligibleDonations() {
 	});
 
 	$eligible = array_values($csv->data);
-
 	$res = [];
-	foreach ($eligible as $donation) {
-		if (!in_array($donation['donor_name'], $blacklist)) {
-			for ($i = 0; $i < $donation['amount'] / $minamnt; $i++) {
-				// echo $donation['donor_name'] . ': ' . $donation['amount'] . '<br>';
-				$res[] = $donation;
+
+	if (!$final_prize_mode) {
+		foreach ($eligible as $donation) {
+			if (!in_array($donation['donor_name'], $blacklist)) {
+				for ($i = 0; $i < $donation['amount'] / $minamnt; $i++) {
+					// echo $donation['donor_name'] . ': ' . $donation['amount'] . '<br>';
+					$res[] = $donation;
+				}
 			}
 		}
+	} else {
+		$res = [];
+
+		foreach ($eligible as $donation) {
+			$name = $donation['donor_name'];
+			if (!array_key_exists($name, $res)) {
+				$res[$name] = $donation;
+			} else {
+				$res[$name]['amount'] += $donation['amount'];
+			}
+		}
+		var_dump($res);
+		$res = array_values($res);
 	}
+
 	return $res;
 }
 ?>
@@ -85,6 +103,11 @@ function getEligibleDonations() {
 			</div>
 			<div>
 				Minimum donation amount: $<input form="form" name="min-amount" type="number" min="1" step="1" value="<?= $minamnt ?>"/>
+			</div>
+			<div>
+				Final Prize Mode? (Equal chances for all): <input form="form" name="final-prize-mode" type="checkbox"/>
+			</div>
+			<div>
 				<input form="form" type="submit" name="submit" value="Spin That Wheel!"/>
 			</div>
 			<div>
