@@ -10,7 +10,7 @@
 				}
 			} else if (strlen($line) > 0) {
 				$eqpos = strpos($line, '=');
-				$key = substr($line, 0, $eqpos);
+				$key = trim(substr($line, 0, $eqpos));
 				$key = preg_replace("/^tile\./", "block.", $key);
 				$key = preg_replace("/\.name$/", "", $key);
 				$val = trim(substr($line, $eqpos + 1));
