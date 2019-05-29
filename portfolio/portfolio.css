@@ -23,7 +23,9 @@ h1 {
 }
 
 .project .header .project-links {
+	line-height: 1.6em;
 	float: right;
+	clear: both;
 }
 
 .project .desc .text {
@@ -40,4 +42,20 @@ h1 {
 	width: 30%;
 	vertical-align: top;
 	margin-top: 1em;
+}
+
+@media (max-width: 800px) {
+
+	.project .header .project-links {
+		float: none;
+		display: block;
+	}
+
+	.project .desc .text {
+		width: 100% !important;
+	}
+
+	.project .desc .image {
+		width: 100%;
+	}
 }

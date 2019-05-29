@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 
   <title>tterrag - Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="tterrag">
 	<meta name="description" content="Portfolio">
 	<meta name="theme-color" content="#4e9745">
