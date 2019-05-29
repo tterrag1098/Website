@@ -1,0 +1,38 @@
+#content {
+	margin-top: 75px;
+}
+
+h1 {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.project .header {
+		margin-top: 1.5em;
+		padding-bottom: 0.25em;
+		border-bottom: 1px solid grey;
+}
+
+.project .header > h3 {
+	display: inline-block;
+	margin: 0;
+}
+
+.project .header .project-links {
+	float: right;
+}
+
+.project .desc .text {
+	display: inline-block;
+}
+
+.project .desc .text.with-image {
+	width: 66%;
+	margin-right: 3%;
+}
+
+.project .desc .image {
+	width: 30%;
+	vertical-align: top;
+	margin-top: 1em;
+}
