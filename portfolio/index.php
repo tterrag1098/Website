@@ -38,9 +38,9 @@
   <div id="mobile-wrapper">
   <div id="content">
 		<h1>Portfolio</h1>
-		<h2>Mods</h2>
+		<h2>Major Content Mods</h2>
 		<p>
-			Minecraft mods that I have created, or had a large part in creating.
+			Large Minecraft mods that I have created, or had a large part in creating.
 		</p>
 		<div class="project mod">
 			<div class="header">
@@ -74,6 +74,100 @@
 					</p>
 				</div>
 				<img class="image" src="ctm.png" />
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>EnderIO</h3> &mdash; Community Manager, DevOps, Former Project Manager <span class="project-links"><a href="https://minecraft.curseforge.com/projects/ender-io">CurseForge</a> | <a href="https://github.com/SleepyTrousers/EnderIO/">GitHub</a> | <a href="https://www.youtube.com/watch?v=Sv0Q4It4bD8">YouTube Video</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						EnderIO is a massive tech mod, with a magical theme focused on souls and industry. The most distinctive feature is its conduits, which allow transporting items, fluid, power, redstone, and more within a single block. Since 2013 when CrazyPants started the mod, it has grown into one of the largest tech mods, with content for almost every aspect of the game.
+					</p>
+					<p>
+						I joined the mod in 2014, mostly as a wiki editor, and doing small pull requests. Soon I was brought on as an official developer, and later when CrazyPants had less time to devote to the mod, the main developer. Eventually, I also had less time to devote to EnderIO, so the torch was passed on. But I remain an active part of the team, mainly running the discord server, website, and continuous integration services.
+					</p>
+					<p>
+						Since August 2013, EnderIO has been downloaded over 30 million times from CurseForge.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Practical Space Fireworks</h3> &mdash; Developer <span class="project-links"><a href="https://minecraft.curseforge.com/projects/psf">CurseForge</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/">GitHub</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/wiki">Wiki</a>
+			</div>
+			<div class="desc">
+				<div class="text with-image">
+					<p>
+						Practical Space Fireworks brings the concept of satellites into Minecraft. It allows the player to build completely free-form rockets, fill them with fuel, and build satellites that will then be launched in to orbit to perform various functions, such as reconnaissance, mapping, and giant space lasers.
+					</p>
+					<p>
+						Practical Space Fireworks began as a mod created for ModJam 5, a mod creation competition that takes place over a weekend, in 2018. Since then it has had multiple updates to bring the mod into a more stable and complete state.
+					</p>
+				</div>
+				<img class="image" src="psf.png" />
+			</div>
+		</div>
+
+		<h2>Small Mods</h2>
+		<p>
+			Smaller Minecraft mods that I have created, or had a large part in creating.
+		</p>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Blur</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/blur">CurseForge</a> | <a href="https://github.com/tterrag1098/Blur">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Blur simply adds an effect to the background of all GUIs, blurring out the world behind them. It is highly configurable, and very pretty.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>ColorblindHelper</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/colorblindhelper">CurseForge</a> | <a href="https://github.com/tterrag1098/ColorblindHelper">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text with-image">
+					<p>
+						ColorblindHelper allows the user to customize the look of items in the game, to better distinguish certain items from others. It is targeted at colorblind players, who may not be able to easily tell the difference between the many different items of modded minecraft.
+					</p>
+				</div>
+				<img class="image" src="colorblindhelper.jpg" />
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Tree Growing Simulator</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/tree-growing-simulator">CurseForge</a> | <a href="https://github.com/tterrag1098/TreeGrowingSimulator2014">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						TGS was made in 2014 specifically for the <em>SkyFactory</em> modpack. It does one simple thing: trees grow when you dance near them. While simple, this revolutionizes the beginning of the popular "skyblock" game type. Less waiting, more dancing!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Simple Achievements</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/simple-achievements">CurseForge</a> | <a href="https://github.com/wyldmods/SimpleAchievements">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Simple Achievements was also made specifically for the <em>SkyFactory</em> modpack. It provides a simple book of achievements for the player to complete, which are not tied to any specific criteria; essentially, a checklist. While simple on the surface, it is fully configurable for modpack developers to add whatever achievements they desire.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

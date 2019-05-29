@@ -3,8 +3,12 @@
 }
 
 h1 {
-	margin: 0 auto;
-	max-width: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.project {
+	margin-bottom: 35px;
 }
 
 .project .header {
@@ -23,6 +27,7 @@ h1 {
 }
 
 .project .desc .text {
+	width: 100%;
 	display: inline-block;
 }
 
