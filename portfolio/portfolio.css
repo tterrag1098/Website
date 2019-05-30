@@ -7,6 +7,20 @@ h1 {
 	text-align: center;
 }
 
+.anchor {
+	float: left;
+	margin-left: -25px;
+	margin-right:  0;
+	padding-right: 7px;
+	color: grey;
+	text-decoration: none !important;
+	visibility: hidden;
+}
+
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor {
+	visibility: visible;
+}
+
 .project {
 	margin-bottom: 35px;
 }

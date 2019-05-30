@@ -39,13 +39,13 @@
   <div id="mobile-wrapper">
   <div id="content">
 		<h1>Portfolio</h1>
-		<h2>Major Content Mods</h2>
+		<h2 id="major-content-mods"><a class="anchor" href="#major-content-mods">#</a>Major Content Mods</h2>
 		<p>
 			Large Minecraft mods that I have created, or had a large part in creating.
 		</p>
 		<div class="project mod">
 			<div class="header">
-				<h3>Chisel</h3> &mdash; Project Manager, Developer <span class="project-links"><a href="https://minecraft.curseforge.com/projects/chisel">CurseForge</a> | <a href="https://github.com/Chisel-Team/Chisel/">GitHub</a> | <a href="https://www.youtube.com/watch?v=nzUShh3WrPk">YouTube Video</a>
+				<h3 id="chisel">Chisel</h3> &mdash; Project Manager, Developer <span class="project-links"><a href="https://minecraft.curseforge.com/projects/chisel">CurseForge</a> | <a href="https://github.com/Chisel-Team/Chisel/">GitHub</a> | <a href="https://www.youtube.com/watch?v=nzUShh3WrPk">YouTube Video</a>
 			</div>
 			<div class="desc">
 				<div class="text with-image">
@@ -63,7 +63,7 @@
 
 		<div class="project mod">
 			<div class="header">
-				<h3>CTM</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/ctm">CurseForge</a> | <a href="https://github.com/Chisel-Team/ConnectedTexturesMod/">GitHub</a> | <a href="https://github.com/Chisel-Team/ConnectedTexturesMod/">Wiki</a>
+				<h3 id="ctm">CTM</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/ctm">CurseForge</a> | <a href="https://github.com/Chisel-Team/ConnectedTexturesMod/">GitHub</a> | <a href="https://github.com/Chisel-Team/ConnectedTexturesMod/">Wiki</a>
 			</div>
 			<div class="desc">
 				<div class="text with-image">
@@ -80,7 +80,7 @@
 
 		<div class="project mod">
 			<div class="header">
-				<h3>EnderIO</h3> &mdash; Community Manager, DevOps, Former Project Manager <span class="project-links"><a href="https://minecraft.curseforge.com/projects/ender-io">CurseForge</a> | <a href="https://github.com/SleepyTrousers/EnderIO/">GitHub</a> | <a href="https://www.youtube.com/watch?v=Sv0Q4It4bD8">YouTube Video</a>
+				<h3 id="enderio">EnderIO</h3> &mdash; Community Manager, DevOps, Former Project Manager <span class="project-links"><a href="https://minecraft.curseforge.com/projects/ender-io">CurseForge</a> | <a href="https://github.com/SleepyTrousers/EnderIO/">GitHub</a> | <a href="https://www.youtube.com/watch?v=Sv0Q4It4bD8">YouTube Video</a>
 			</div>
 			<div class="desc">
 				<div class="text">
@@ -99,7 +99,7 @@
 
 		<div class="project mod">
 			<div class="header">
-				<h3>Practical Space Fireworks</h3> &mdash; Developer <span class="project-links"><a href="https://minecraft.curseforge.com/projects/psf">CurseForge</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/">GitHub</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/wiki">Wiki</a>
+				<h3 id="psf">Practical Space Fireworks</h3> &mdash; Developer <span class="project-links"><a href="https://minecraft.curseforge.com/projects/psf">CurseForge</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/">GitHub</a> | <a href="https://github.com/PracticalSpaceFireworks/PracticalSpaceFireworks/wiki">Wiki</a>
 			</div>
 			<div class="desc">
 				<div class="text with-image">
@@ -114,14 +114,14 @@
 			</div>
 		</div>
 
-		<h2>Small Mods</h2>
+		<h2 id="small-mods"><a class="anchor" href="#small-mods">#</a>Small Mods</h2>
 		<p>
 			Smaller Minecraft mods that I have created, or had a large part in creating.
 		</p>
 
 		<div class="project mod">
 			<div class="header">
-				<h3>Blur</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/blur">CurseForge</a> | <a href="https://github.com/tterrag1098/Blur">GitHub</a>
+				<h3 id="blur">Blur</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/blur">CurseForge</a> | <a href="https://github.com/tterrag1098/Blur">GitHub</a> | <a href="https://i.imgur.com/EmSEKFu.gifv">Demonstration</a>
 			</div>
 			<div class="desc">
 				<div class="text">
@@ -148,7 +148,33 @@
 
 		<div class="project mod">
 			<div class="header">
-				<h3>Tree Growing Simulator</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/tree-growing-simulator">CurseForge</a> | <a href="https://github.com/tterrag1098/TreeGrowingSimulator2014">GitHub</a>
+				<h3>WAILA Plugins</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/waila-plugins">CurseForge</a> | <a href="https://github.com/tterrag1098/WAILAPlugins">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Adds a large amount of plugins for the popular information mod WAILA.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Moonball</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/moonball">CurseForge</a> | <a href="https://github.com/tterrag1098/Moonball">GitHub</a> | <a href="https://www.youtube.com/watch?v=wnsnchzQ4v4">YouTube Video</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						A silly mod that adds the popular toy of the same name into the game. They can be thrown at varying speeds, bounce off of and break blocks, and damage entities.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Tree Growing Simulator</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/tree-growing-simulator">CurseForge</a> | <a href="https://github.com/tterrag1098/TreeGrowingSimulator2014">GitHub</a> | <a href="https://www.youtube.com/watch?v=smAp8i0i4Xg">YouTube Video</a>
 			</div>
 			<div class="desc">
 				<div class="text">
@@ -167,6 +193,88 @@
 				<div class="text">
 					<p>
 						Simple Achievements was also made specifically for the <em>SkyFactory</em> modpack. It provides a simple book of achievements for the player to complete, which are not tied to any specific criteria; essentially, a checklist. While simple on the surface, it is fully configurable for modpack developers to add whatever achievements they desire.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h2 id="contributions"><a class="anchor" href="#contributions">#</a>Contributions</h2>
+		<p>
+			Mods and projects which I have made significant contributions to.
+		</p>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>MinecraftForge</h3> &mdash; Project Member
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						The most popular modding API for Minecraft. I joined the MinecraftForge project in 2018 to assist with managing issues and pull requests, and was soon brought on as a developer to assist with the update to Minecraft 1.13. Before 2018 I had made many pull requests to add various features. In total I have made nearly 50 pull requests to Forge, and many more direct contributions since being brought on as a developer.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Tropicraft</h3> &mdash; Project Member <span class="project-links"><a href="https://minecraft.curseforge.com/projects/tropicraft">CurseForge</a> | <a href="https://github.com/Tropicraft/Tropicraft">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text with-image">
+					<p>
+						One of the oldest mods still receiving updates, Tropicraft adds a whole new dimension to the game. An idyllic, charming paradise in which to dream, explore, and let your creativity run free: The Tropics. Lush forests, winding rivers, and oceans teeming with life make the tropics a place for endless exploration and discovery.
+					</p>
+					<p>
+						I joined the Tropicraft project in 2017, shortly after my trip to Minecon 2016 where I met the creators Cojomax99 and Corosus. Since then I have assisted with the arduous update to Minecraft 1.10 from 1.7, and further maintenance and features. Before joining the project I did not know much about it, but I have come to realize why so many adore the mod, and why it continues to find its place in the community today.
+					</p>
+				</div>
+				<img class="image" src="tropicraft.jpg" />
+			</div>
+		</div>
+
+		<h2 id="past-projects"><a class="anchor" href="#past-projects">#</a>Past Projects</h2>
+		<p>
+			One-off or discontinued projects I had large involvement with.
+		</p>
+
+		<div class="project">
+			<div class="header">
+				<h3>LoveTropics</h3> &mdash; Co-Organizer <span class="project-links"><a href="https://lovetropics.com/">Website</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Not a mod, but a yearly weekend-long charity stream to raise money for hurricane repairs in the tropics, specifically Puerto Rico. The event takes place in Minecraft, as a hosted server that anyone can join for a minimum donation. The stream is 48 hours long, and offers wall-to-wall activities and giveaways.
+					</p>
+					<p>
+						In just 2 years we have raised over $45,000 for relief efforts. Come join us for LoveTropics 2019, which we're planning to be bigger and better than ever before!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>Creatubbles</h3> &mdash; Author <span class="project-links"><a href="https://stateoftheart.creatubbles.com/minecraft/">Website</a> | <a href="https://minecraft.curseforge.com/projects/creatubbles">CurseForge</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						The Creatubbles integration mod integrats the creatubbles.com service, a place for kids around the world to share their art, into Minecraft. Browse your artwork, print it onto hangable paintings, and capture screenshots and GIFs to upload to the service.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="project mod">
+			<div class="header">
+				<h3>CustomThings</h3> &mdash; Creator <span class="project-links"><a href="https://minecraft.curseforge.com/projects/customthings">CurseForge</a> | <a href="https://github.com/tterrag1098/CustomThings">GitHub</a> | <a href="https://github.com/tterrag1098/CustomThings/wiki">Wiki</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Custom Things is a mod which allows the creation of custom items, blocks, achievements, and recipes via JSON files. Originally published in 2015, it was one of the first mods to promote this capability to modpack developers. I have discontinued the mod, but many like it continue to exist.
 					</p>
 				</div>
 			</div>
