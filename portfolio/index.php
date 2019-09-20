@@ -205,7 +205,7 @@
 
 		<div class="project mod">
 			<div class="header">
-				<h3>MinecraftForge</h3> &mdash; Project Member
+				<h3>MinecraftForge</h3> &mdash; Project Member <span class="project-links"><a href="https://github.com/MinecraftForge/MinecraftForge">GitHub</a>
 			</div>
 			<div class="desc">
 				<div class="text">
