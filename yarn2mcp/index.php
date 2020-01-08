@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../root.css">
 	<link rel="stylesheet" type="text/css" href="yarn2mcp.css">
 
-  <title>tterrag - .lang to .json</title>
+  <title>tterrag - Yarn over MCP mappings</title>
   <meta name="author" content="tterrag">
 	<meta name="description" content="Yarn over MCP mappings">
 	<meta name="theme-color" content="#4e9745">
