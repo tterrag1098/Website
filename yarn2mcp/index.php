@@ -57,7 +57,7 @@ repositories {
 }
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200108-mixed-1.15.1'
+    mappings channel: 'snapshot', version: '<?= date("Ymd") ?>-mixed-1.15.1'
     ...</pre>
 		</p>
 		<h2>Why?</h2>
