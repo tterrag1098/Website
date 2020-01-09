@@ -48,7 +48,17 @@
 			<li>A set of mixed mappings, which use 1.14.3 MCP mappings applied to 1.15.1 srgs, with yarn names filling in as many unnamed members as possible. <strong>This is the set you most likely want.</strong></li>
 		</ul>
 		<p>
-			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.15.1</code>).
+			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.15.1</code>). So overall, it should look like this:
+			<pre>
+repositories {
+    maven {
+        url "https://maven.tterrag.com/"
+    }
+}
+
+minecraft {
+    mappings channel: 'snapshot', version: '20200108-mixed-1.15.1'
+    ...</pre>
 		</p>
 		<h2>Why?</h2>
 		<p>

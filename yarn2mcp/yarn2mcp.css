@@ -2,8 +2,13 @@
 	margin-top: 50px;
 }
 
-code {
+code, pre {
+	color: #aaa;
   background-color: #222;
   padding: 0.1em 0.2em;
   font-weight: bold;
+}
+
+pre {
+	padding: 1em;
 }
