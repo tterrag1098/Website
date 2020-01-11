@@ -43,7 +43,7 @@
 			This service provides custom mappings for use when creating forge mods, that use the <a href="https://github.com/FabricMC/yarn">yarn</a> mapping data. Three artifacts are published daily:
 		</p>
 		<ul>
-			<li>Yarn mappings on top of MCP for the latest MCP version (currently 1.14.3)</li>
+			<li>Yarn mappings on top of MCP for the latest MCP version (currently 1.14.3) <em>Note: this is a "stable" version, and will not update</em></li>
 			<li>Yarn mappings on top of MCP (srgs) for the latest stable Yarn version (currently 1.15.1). If this is the ever the same, it will be skipped</li>
 			<li>A set of mixed mappings, which use 1.14.3 MCP mappings applied to 1.15.1 srgs, with yarn names filling in as many unnamed members as possible. <strong>This is the set you most likely want.</strong></li>
 		</ul>
@@ -59,6 +59,9 @@ repositories {
 minecraft {
     mappings channel: 'snapshot', version: '<?= date("Ymd") ?>-mixed-1.15.1'
     ...</pre>
+		</p>
+		<p>
+			For stable 1.14.3 yarn mappings, use the channel <code>'stable'</code> with the version <code>'yarn-1.14.3'</code>.
 		</p>
 		<h2>Why?</h2>
 		<p>
