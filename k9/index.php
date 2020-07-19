@@ -23,6 +23,7 @@
 		<a href="/">Home</a>
 		<a class="selected" href="/k9">K9</a>
 		<a href="/lang2json">Lang to JSON Converter</a>
+        <a href="/yarn2mcp">Yarn over MCP</a>
 		<span class="separator"></span>
     <a href="https://github.com/tterrag1098/K9">GitHub</a>
     <a href="https://ci.tterrag.com/job/K9">Builds</a>
