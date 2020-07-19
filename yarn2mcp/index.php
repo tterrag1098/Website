@@ -43,10 +43,12 @@
 			This service provides custom mappings for use when creating forge mods, that use the <a href="https://github.com/FabricMC/yarn">yarn</a> mapping data. Three artifacts are published daily:
 		</p>
 		<ul>
-			<li>Yarn mappings on top of MCP for the latest MCP version (currently 1.14.3) <em>Note: this is a "stable" version, and will not update</em></li>
-			<li>Yarn mappings on top of MCP (srgs) for the latest stable Yarn version (currently 1.15.1). If this is the ever the same, it will be skipped</li>
-			<li>A set of mixed mappings, which use 1.14.3 MCP mappings applied to 1.15.1 srgs, with yarn names filling in as many unnamed members as possible. <strong>This is the set you most likely want.</strong></li>
+			<li>Yarn mappings on top of MCP (srgs) for the latest stable Yarn version (currently 1.16.1). If the two versions are the same, this will be skipped</li>
+			<li>A set of mixed mappings, which use 1.14.3 MCP mappings applied to the latest (currently 1.16.1) srgs, with yarn names filling in as many unnamed members as possible. <strong>This is the set you most likely want.</strong></li>
 		</ul>
+        <p>
+        Additionally, a stable channel of Yarn on top of MCP srgs is published for the latest version of MCP.
+        </p>
 		<p>
 			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.15.1</code>). So overall, it should look like this:
 			<pre>
@@ -57,15 +59,15 @@ repositories {
 }
 
 minecraft {
-    mappings channel: 'snapshot', version: '<?= date("Ymd") ?>-mixed-1.15.1'
+    mappings channel: 'snapshot', version: '<?= date("Ymd") ?>-mixed-1.16.1'
     ...</pre>
 		</p>
 		<p>
-			For stable 1.14.3 yarn mappings, use the channel <code>'stable'</code> with the version <code>'yarn-1.14.3'</code>.
+			For stable 1.16.1 yarn mappings, use the channel <code>'stable'</code> with the version <code>'yarn-1.16.1'</code>.
 		</p>
 		<h2>Why?</h2>
 		<p>
-			MCP does not currently have mappings released for 1.15.1, so this fills the gap until those are completed so that modders can work on 1.15.1 forge mods without all the new fields/methods being unnamed. Additionally, due to the legal issues surrounding the official mojang mappings, I wanted to give forge modders the choice to use an alternative mapping set entirely.
+			MCP does not currently have mappings released for 1.16.1, so this fills the gap until those are completed so that modders can work on 1.16.1 forge mods without all the new fields/methods being unnamed. Additionally, due to the legal issues surrounding the official mojang mappings, I wanted to give forge modders the choice to use an alternative mapping set entirely.
 		</p>
   </div>
   </div>
