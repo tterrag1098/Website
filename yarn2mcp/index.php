@@ -41,14 +41,14 @@
   <div id="content">
 		<h2>What is this?</h2>
 		<p>
-			This service provides custom mappings for use when creating forge mods, that use the <a href="https://github.com/FabricMC/yarn">yarn</a> mapping data. Three artifacts are published daily:
+			This service provides custom mappings for use when creating forge mods, that use the <a href="https://github.com/FabricMC/yarn">yarn</a> mapping data. Two artifacts are published daily:
 		</p>
 		<ul>
 			<li>Yarn mappings on top of MCP (srgs) for the latest stable Yarn version (currently 1.16.1). If the two versions are the same, this will be skipped</li>
 			<li>A set of mixed mappings, which use 1.14.3 MCP mappings applied to the latest (currently 1.16.1) srgs, with yarn names filling in as many unnamed members as possible. <strong>This is the set you most likely want.</strong></li>
 		</ul>
         <p>
-        Additionally, a stable channel of Yarn on top of MCP srgs is published for the latest version of MCP.
+        Additionally, a stable channel of Yarn on top of MCP srgs is published for the latest stable version of MCP.
         </p>
 		<p>
 			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.15.1</code>). So overall, it should look like this:
