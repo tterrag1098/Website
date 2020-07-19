@@ -51,7 +51,7 @@
         Additionally, a stable channel of Yarn on top of MCP srgs is published for the latest stable version of MCP.
         </p>
 		<p>
-			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.15.1</code>). So overall, it should look like this:
+			They can be used by adding my maven (<code>https://maven.tterrag.com/</code>) to your gradle repositories, and adding <code>-yarn</code> (for yarn mappings) or <code>-mixed</code> (for mixed mappings) suffix to the snapshot version (e.g. <code><?= date("Ymd") ?>-mixed-1.16.1</code>). So overall, it should look like this:
 			<pre>
 repositories {
     maven {
