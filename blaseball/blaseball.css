@@ -1,0 +1,22 @@
+#content {
+	margin-top: 50px;
+}
+
+code, pre {
+	color: #aaa;
+  background-color: #222;
+  padding: 0.1em 0.2em;
+  font-weight: bold;
+}
+
+pre {
+	padding: 1em;
+}
+
+#bookmarklet-a {
+  background: black;
+  border-radius: 4px;
+  padding: 6px;
+  display: inline-block;
+  cursor: grab;
+}
