@@ -391,7 +391,7 @@ function onLeaguePage() {
 /* Add a forced width and margin to widgets */
 .GameWidget {
     display: inline-block;
-    width: 350px;
+    min-width: 350px;
     max-width: 450px;
     margin: 2px;
     flex: 1 1 0;
