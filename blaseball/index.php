@@ -37,7 +37,18 @@
     <div id="content">
 	    <h1>Blaseball Dashboard</h1>
 		<p>
-			Alters the css of the league page to show more games at once in a more compact grid.
+			Alters the css league and upcoming pages to show more games at once in a more compact grid.
+		</p>
+		<p>
+			In the watch live tab, games will have a few additional elements for better at-a-glance information:
+		</p>
+		<ul>
+			<li>During a scoring event, a game will have a bright yellow border</li>
+			<li>The team currently at bat will have a bat icon next to their name</li>
+			<li>The bet widget will be colored based on the current result (green: winning, blue: tied, red: losing)</li>
+		</ul>
+		<p>
+			In addition, completed games will no longer move to the end of the list (as long as you do not refresh the page).
 		</p>
         <img width="100%" src="example.png"/>
         <p>Drag this to your bookmark bar to save it, then just click the bookmark with the league page open.</p>
@@ -46,7 +57,7 @@
         <a href="blaseball-dashboard.user.js">Install Userscript</a>
         </p>
         <details>
-            <summary style="cursor:pointer;">Expand to view the full code.<br/><br/>This is a small script that is purely clientside. It collects no information and makes no network requests.</summary>
+            <summary style="cursor:pointer;">Expand to view the full code.<br/><br/>This is a small script that is purely clientside. It collects no information and makes no network requests except to download jQuery from cdnjs, a trusted JavaScript CDN.</summary>
             <pre><?= htmlspecialchars(file_get_contents('blaseball-dashboard.user.js')) ?></pre>
         </details>
     </div>
