@@ -126,7 +126,6 @@ function onLeaguePage() {
     e = d.createElement("style");
     e.innerHTML = `
     /* This is all copied from the media query for the "mobile" look */
-    /* This is all copied from the media query for the "mobile" look */
     .Widget-Display-Visual {
         margin:0;
         grid-row: 2/4;
@@ -442,6 +441,326 @@ function onLeaguePage() {
     .theme-light .Batting-Indicator {
         fill: black;
     }
+/* This is all copied from the media query for the "mobile" look */
+.Widget-Display-Visual {
+    margin:0;
+    grid-row: 2/4;
+    flex-direction: column;
+    padding: 0 10px 10px;
+    background: transparent
+}
+
+.Widget-Display-Visual-Max:after {
+    bottom: 5px;
+    left: 7px;
+    font-size: 11px
+}
+
+.Widget-Display-Body {
+    padding: 0;
+    width: 100%;
+}
+
+.Widget-Display-Body .Widget-Bases {
+    grid-column: 1/2;
+    grid-row: 1/2
+}
+
+.Widget-Display-Body .Widget-Outs {
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+
+.Widget-Display-Body .Widget-AtBat {
+    grid-column: 2/3;
+    grid-row: 1/2
+}
+
+.Widget-Display-Body .Widget-Log {
+    display: block;
+    min-height: 92px;
+    padding: 5px 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 14px
+}
+
+.theme-dark .Widget-Display-Body .Widget-Log {
+    background: rgba(30,30,30,.64)
+}
+
+.theme-light .Widget-Display-Body .Widget-Log {
+    background: hsla(0,0%,89%,.71)
+}
+
+.Widget-Header {
+    border-radius: 0
+}
+
+.Widget-Header-Wrapper {
+    grid-column: 1/3
+}
+
+.Widget-ScoreBacking {
+    padding: 10px 0
+}
+
+.Widget-ScoreLabel--Series+.GameWidget-ScoreLabel--Score {
+    display: none
+}
+
+.Widget-AtBat {
+    grid-column: 2/3;
+    grid-row: 2/3
+}
+
+.Widget-Outs {
+    justify-content: flex-start
+}
+
+.Widget-Outs-Label {
+    font-size: 12px
+}
+
+.Widget-Outs-DotList {
+    align-items: flex-start;
+    height: 85%
+}
+
+.Widget-Outs-Dots {
+    font-size: 24px;
+    line-height: 14px
+}
+
+.Widget-Log {
+    grid-column: 2/3;
+    grid-row: 3/4
+}
+
+.Widget-Log,.Widget-Log-Header {
+    display: none
+}
+
+.Widget-Log-Content {
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.Widget-Log-Line {
+    margin: 0
+}
+
+.Widget-PlayerLine {
+    justify-content: flex-start
+}
+
+.Widget-PlayerStatusLabel {
+    display: none
+}
+
+.Widget-PlayerStatusIcon {
+    display: block
+}
+
+.Widget-PlayerLineName {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 2px 0
+}
+
+.GameWidget {
+    border-radius: 5px
+}
+
+.theme-dark .GameWidget {
+    background: #0b0b0b;
+}
+
+.theme-light .GameWidget {
+    background: #f2f2f2
+}
+
+.GameWidget-Full-Live {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+    gap: 0
+}
+
+.GameWidget-Full-Upcoming {
+    grid-template-columns: 40% auto
+}
+
+.GameWidget-Upcoming-Info {
+    grid-column: 1/3;
+    margin-left: 0;
+    background-color: transparent
+}
+
+.GameWidget-Upcoming-Odds {
+    grid-template-columns: 100%
+}
+
+.GameWidget-Upcoming-OddsTeam {
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.GameWidget-Upcoming-Favorites-Team {
+    font-size: 14px
+}
+
+.GameWidget-Upcoming-Favorites-Percentage {
+    font-size: 18px
+}
+
+.GameWidget-Upcoming-Full {
+    grid-column: 1/3;
+    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: 100%
+}
+
+.GameWidget-Upcoming-Header {
+    display: none
+}
+
+.GameWidget-Upcoming-Body {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start
+}
+
+.GameWidget-Upcoming-Body .GameWidget-PlayerLine+.GameWidget-PlayerLine {
+    margin-left: 10px
+}
+
+.GameWidget-Upcoming-Label {
+    display: none
+}
+
+.GameWidget-Upcoming-Icon {
+    display: block;
+    margin-left: 20px
+}
+
+.GameWidget-Upcoming-Bets {
+    background-color: rgba(30,30,30,.64);
+    display: block;
+    padding: 10px;
+    grid-column: 1/3;
+    border-radius: 0
+}
+
+.theme-dark .GameWidget-Upcoming-Bets {
+    background: rgba(30,30,30,.64)
+}
+
+.theme-light .GameWidget-Upcoming-Bets {
+    background: hsla(0,0%,89%,.71)
+}
+
+.GameWidget-Upcoming-BetButtons {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.GameWidget-Outcome {
+    grid-column: 1/3;
+    background-color: rgba(30,30,30,.64);
+    border-radius: 0
+}
+
+.theme-dark .GameWidget-Outcome {
+    background: rgba(30,30,30,.64)
+}
+
+.theme-light .GameWidget-Outcome {
+    background: hsla(0,0%,89%,.71)
+}
+
+.GameWidget-ScoreName {
+    font-size: 18px
+}
+
+.GameWidget-ScoreNumber {
+    margin: 0 8px 0 0
+}
+
+.GameWidget-ScoreTeamColorBar {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 24px
+}
+
+.GameWidget-ScoreLine {
+    grid-gap: 5px;
+    gap: 5px;
+    margin-bottom: 5px
+}
+
+.GameWidget.IsComplete .GameWidget-Log {
+    display: none
+}
+/* End copied code */
+
+/* Add a forced width and margin to widgets */
+.GameWidget {
+    display: inline-block;
+    width: 350px;
+    max-width: 450px;
+    margin: 2px;
+    flex: 1 1 0;
+}
+
+/* Give hitter/pitcher names a little more room to breathe */
+.Widget-Display-Body {
+    grid-template-columns: 100px auto;
+}
+
+/* The game list does not have any class or ID so we have to just select the exact ul element */
+.Main-Body > div:not([class]) > ul:not([class]) {
+    /* Force the game list to 100% screen width */
+    width: 100vw;
+    margin-left: calc(-50vw + 509px); /* This inverses the padding on the parent div */
+    padding-left: 15px;
+    padding-right: 10px;
+
+    /* Make the list of widgets a flexbox so that they fill available space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Add an invisible border as a placeholder for the score highlight */
+.theme-dark .GameWidget {
+    border: 3px solid black;
+}
+
+.theme-light .GameWidget {
+    border: 3px solid white;
+}
+
+/* Highlighting scoring events */
+.GameWidget.Scored {
+    border: 3px solid #ffeb57;
+}
+
+.Batting-Indicator {
+    display: inline-block;
+    width: 20px;
+    margin-left: 5px;
+    margin-top: -100px;
+}
+
+/* Remove team color from at-bat indicator */
+.theme-dark .Batting-Indicator {
+    fill: white;
+}
+
+.theme-light .Batting-Indicator {
+    fill: black;
+}
     `;
     d.head.appendChild(e)
 })(document)

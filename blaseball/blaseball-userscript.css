@@ -265,7 +265,9 @@
 .GameWidget {
     display: inline-block;
     width: 350px;
+    max-width: 450px;
     margin: 2px;
+    flex: 1 1 0;
 }
 
 /* Give hitter/pitcher names a little more room to breathe */
@@ -278,6 +280,8 @@
     /* Force the game list to 100% screen width */
     width: 100vw;
     margin-left: calc(-50vw + 509px); /* This inverses the padding on the parent div */
+    padding-left: 15px;
+    padding-right: 10px;
 
     /* Make the list of widgets a flexbox so that they fill available space */
     display: flex;
