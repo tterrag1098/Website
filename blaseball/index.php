@@ -48,11 +48,10 @@
         <details>
             <summary style="cursor:pointer;">Expand to view the full code.<br/><br/>This is a small script that is purely clientside. It collects no information and makes no network requests.</summary>
             <pre>
-                <?= echo file_get_contents('blaesball-dashboard.user.js'); ?>
+                <?= file_get_contents('blaesball-dashboard.user.js') ?>
             </pre>
         </details>
     </div>
     </div>
 </body>
 </html>
-<?php date_default_timezone_set(ini_get('date.timezone')); ?>
