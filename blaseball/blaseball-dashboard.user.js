@@ -80,8 +80,8 @@ function updateWidget(widget, idx) {
     // Color bet widget based on current score
     let bet = widget.find('.GameWidget-ScoreBet-Winnings');
     let line = bet.parents('.GameWidget-ScoreLine');
-    let forscore = parseInt(line.find('.GameWidget-ScoreNumber').text());
-    let againstscore = parseInt(line.siblings().find('.GameWidget-ScoreNumber').text());
+    let forscore = parseFloat(line.find('.GameWidget-ScoreNumber').text());
+    let againstscore = parseFloat(line.siblings().find('.GameWidget-ScoreNumber').text());
     if (forscore < againstscore) {
         bet.css('background-color', '#c72222');
     } else if (forscore == againstscore) {
