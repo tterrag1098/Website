@@ -9,16 +9,18 @@
 
     <title>tterrag - Blaseball Stuff</title>
     <meta name="author" content="tterrag">
-    <meta name="description" content="Various blaseball projects">
+    <meta name="description" content="A more compact and at-a-glance blaseball UI">
     <meta name="theme-color" content="#4e9745">
 
-    <meta property="og:title" content="Blaseball Stuff">
+    <meta property="og:title" content="Blaseball Dashboard">
+    <meta property="og:description" content="A more compact and at-a-glance blaseball UI">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.tterrag.com/blaseball">
+    <meta property="og:url" content="https://www.tterrag.com/blaseball">
     <meta property="og:site_name" content="tterrag.com">
+    <meta property="og:image" content="https://www.tterrag.com/blaseball/example.png">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Blaseball Stuff">
+    <meta name="twitter:title" content="Blaseball Dashboard">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
