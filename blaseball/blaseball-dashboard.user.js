@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.1.3
+// @version      0.1.4
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -414,6 +414,16 @@ function onLeaguePage() {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (max-width: 1080px) {
+
+    /* Unapply forced width on mobile layout */
+    .Main-Body > div:not([class]) > ul:not([class]) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
 /* Add an invisible border as a placeholder for the score highlight */

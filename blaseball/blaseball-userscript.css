@@ -289,6 +289,16 @@
     justify-content: center;
 }
 
+@media (max-width: 1080px) {
+
+    /* Unapply forced width on mobile layout */
+    .Main-Body > div:not([class]) > ul:not([class]) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
 /* Add an invisible border as a placeholder for the score highlight */
 .theme-dark .GameWidget {
     border: 3px solid black;
