@@ -403,7 +403,8 @@ function onLeaguePage() {
 }
 
 /* The game list does not have any class or ID so we have to just select the exact ul element */
-.Main-Body > div:not([class]) > ul:not([class]) {
+.Main-Body > div:not([class]) > ul:not([class]),
+.Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) { /* site bug? */
     /* Force the game list to 100% screen width */
     width: 100vw;
     margin-left: calc(-50vw + 509px); /* This inverses the padding on the parent div */
@@ -419,7 +420,8 @@ function onLeaguePage() {
 @media (max-width: 1080px) {
 
     /* Unapply forced width on mobile layout */
-    .Main-Body > div:not([class]) > ul:not([class]) {
+    .Main-Body > div:not([class]) > ul:not([class]),
+    .Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) { /* site bug? */
         width: 100%;
         margin-left: 0;
         padding: 0;
