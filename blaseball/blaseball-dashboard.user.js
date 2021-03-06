@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.1.4
+// @version      0.1.5
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -13,6 +13,13 @@ var _bbd_observer;
 var ordering = new Map();
 
 function loadObserver() {
+    let attach = $('.Main-Body')[0];
+    if (!attach) {
+        // Wait for site load
+        setTimeout(loadObserver, 50);
+        return;
+    }
+    console.log("Initializing Blaseball Dashboard");
     let config = { childList: true, subtree: true };
 
     let lastMutationTime = 0;
@@ -53,7 +60,7 @@ function loadObserver() {
     callback(null, null);
     // Set up an observer to update the additions whenever the gamestate changes
     _bbd_observer = new MutationObserver(callback);
-    _bbd_observer.observe($('.Main-Body')[0], config);
+    _bbd_observer.observe(attach, config);
 }
 
 function updateWidget(widget, idx) {
