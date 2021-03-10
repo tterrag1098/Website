@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.1.6
+// @version      0.2.0
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -12,15 +12,48 @@
 var _bbd_observer;
 var ordering = new Map();
 
-function loadObserver() {
+function initialize() {
     let attach = $('.Main')[0];
     if (!attach) {
         // Wait for site load
-        setTimeout(loadObserver, 50);
+        setTimeout(initialize, 50);
         return;
     }
+
     console.log("Initializing Blaseball Dashboard");
-    let config = { childList: true, subtree: true };
+
+    $('head').append($('<script src="https://kit.fontawesome.com/e7e5187ceb.js" crossorigin="anonymous">'));
+    let buttons = $('<div class="bbd-buttons">');
+    $('body').append(buttons);
+
+    let sizeBtn = $('<button class="size-btn" title="Toggle Widget Size"><i class="fas fa-th-large"></i></button>');
+    buttons.append(sizeBtn);
+    sizeBtn.click(function() {
+        let body = $('body');
+        body.toggleClass('large-widgets');
+        let icon = sizeBtn.find('i');
+        if (body.hasClass('large-widgets')) {
+            icon.removeClass('fa-th-large').addClass('fa-th');
+        } else {
+            icon.addClass('fa-th-large').removeClass('fa-th');
+        }
+    });
+
+    let fullscreenBtn = $('<button class="fullscreen-btn" title="Toggle Fullscreen"><i class="fas fa-expand"></i></button>');
+    buttons.append(fullscreenBtn);
+    fullscreenBtn.click(function() {
+        let icon = fullscreenBtn.find('i');
+        if (isInFullScreen()) {
+            cancelFullScreen();
+            icon.removeClass('fa-compress').addClass('fa-expand');
+            $('nav').css('position', '');
+        } else {
+            requestFullScreen();
+            icon.addClass('fa-compress').removeClass('fa-expand');
+            window.scrollTo(0, $(".League-Countdown").offset().top + 10);
+            $('nav').css('position', 'relative');
+        }
+    });
 
     let lastMutationTime = 0;
     let allFinished = false;
@@ -31,16 +64,21 @@ function loadObserver() {
             return;
         }
         lastMutationTime = time;
+        console.log("[Blaseball Dashboard] Refreshing widgets");
         // Delay updates a bit or they can run before the DOM is updated
         setTimeout(function() {
             if (onLeaguePage()) {
                 // Calculate the number of games that are finished by counting the "FINAL" labels
-                let numFinished = $('.Widget-Status-Complete').length;
-                if (numFinished == 10) {
+                let numFinished = $('.Widget-Status--Complete').length;
+                console.log("Finished games: " + numFinished + "   All finished? " + allFinished);
+                if (numFinished == $('.GameWidget').length) {
+                    console.log("[Blaseball Dashboard] All games finished");
                     allFinished = true;
                 } else if (allFinished) {
                     // If all games were previously finished, this is a new slate of games, so we need to clear the ordering state
+                    console.log("[Blaseball Dashboard] Clearing saved widget ordering");
                     ordering.clear();
+                    allFinished = false;
                 }
             }
 
@@ -53,6 +91,7 @@ function loadObserver() {
 
     // Disable any old observer
     if (_bbd_observer) {
+        console.log("[Blaseball Dashboard] Disconnecting old observer");
         _bbd_observer.disconnect();
     }
 
@@ -60,10 +99,15 @@ function loadObserver() {
     callback(null, null);
     // Set up an observer to update the additions whenever the gamestate changes
     _bbd_observer = new MutationObserver(callback);
+
+    let config = { childList: true, subtree: true };
+    console.log("[Blaseball Dashboard] Attaching observer");
+    // console.log($(attach));
     _bbd_observer.observe(attach, config);
 }
 
 function updateWidget(widget, idx) {
+    //console.log("[Blaseball Dashboard] Updating widget #" + idx);
     // Add highlight on score events
     if (widget.find(".Widget-Log-Score").text().length > 1) {
         widget.addClass("Scored");
@@ -75,7 +119,7 @@ function updateWidget(widget, idx) {
     let status = widget.find('.Widget-Status--Live, .Widget-Status--Shame');
     widget.find('.Batting-Indicator').remove();
     if (status.length > 0) {
-        let batting = status.text().substr(-1) == "▼" || status.is('.Widget-Status--Shame') ? 1 : 0;  
+        let batting = status.text().substr(-1) == "▼" || status.is('.Widget-Status--Shame') ? 1 : 0;
         widget.find('.GameWidget-ScoreLine').eq(batting).find('.GameWidget-ScoreName').append('<span class="Batting-Indicator">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path d="M16.4,10.5l4.9-4.9c0.7-0.7,0.9-1.9,0.3-2.8c-0.8-1.1-2.3-1.2-3.2-0.3l-5,5c-1.7,1.7-5.3,7.1-7.5,9.3l-2.7,2.7  c-0.3-0.3-0.8-0.3-1.1,0l0,0c-0.3,0.3-0.3,0.8,0,1.1l1.1,1.1c0.3,0.3,0.8,0.3,1.1,0l0,0c0.3-0.3,0.3-0.8,0-1.1L7.1,18  C9.3,15.8,14.7,12.3,16.4,10.5z"></path><g><path d="M10,4.4C9.6,4.5,9.3,4.7,9,5C8.7,5.3,8.5,5.6,8.4,6C9.2,5.8,9.8,5.2,10,4.4z"></path><path d="M8.7,4.7C9.1,4.3,9.6,4.1,10,3.9C10,2.9,9.1,2,8.1,2C8,2.4,7.7,2.9,7.3,3.3C6.9,3.7,6.4,4,6,4.1C6,5.1,6.9,6,7.9,6   C8,5.6,8.3,5.1,8.7,4.7z"></path><path d="M7.6,2C6.8,2.2,6.2,2.8,6,3.6C6.4,3.5,6.7,3.3,7,3C7.3,2.7,7.5,2.4,7.6,2z"></path></g></svg></span>');
     }
 
@@ -103,10 +147,10 @@ function updateWidget(widget, idx) {
         let id = widget.attr('aria-label');
         let order = idx;
         if (ordering.has(id)) {
-            console.log("[" + id + "] Found existing order: " + ordering.get(id));
+            //console.log("[" + id + "] Found existing order: " + ordering.get(id));
             order = ordering.get(id);
         } else {
-            console.log("[" + id + "] Found new order: " + order);
+            //console.log("[" + id + "] Found new order: " + order);
             ordering.set(id, order);
         }
         // Force the saved order so that games don't shuffle around when they complete
@@ -120,6 +164,22 @@ function onLeaguePage() {
     return window.location.href.indexOf('/league') > 0;
 }
 
+function cancelFullScreen() {
+    var el = document;
+    var requestMethod = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullscreen || el.webkitExitFullscreen;
+    return requestMethod.call(el);
+}
+
+function requestFullScreen() {
+    var el = document.documentElement;
+    var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen;
+    return requestMethod.call(el);
+}
+
+function isInFullScreen() {
+    return (document.fullScreenElement || document.mozFullScreen || document.webkitIsFullScreen);
+}
+
 ((d,e) => {
     const script = document.createElement('script');
     // I know, I have a problem, deal with it
@@ -127,7 +187,7 @@ function onLeaguePage() {
     document.head.appendChild(script);
 
     // Load active components
-    script.addEventListener('load', loadObserver);
+    script.addEventListener('load', initialize);
 
     // Add custom styles
     e = d.createElement("style");
@@ -404,6 +464,10 @@ function onLeaguePage() {
     flex: 1 1 0;
 }
 
+.large-widgets .GameWidget {
+    min-width: 450px;
+}
+
 /* Give hitter/pitcher names a little more room to breathe */
 .Widget-Display-Body {
     grid-template-columns: 100px auto;
@@ -463,6 +527,23 @@ function onLeaguePage() {
 
 .theme-light .Batting-Indicator {
     fill: black;
+}
+
+.bbd-buttons {
+    font-size: 32px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 4px;
+}
+
+.bbd-buttons button {
+    color: rgba(255, 255, 255, 0.25);
+    line-height: 40px;
+}
+
+.bbd-buttons button:hover {
+    color: white;
 }
     `;
     d.head.appendChild(e)
