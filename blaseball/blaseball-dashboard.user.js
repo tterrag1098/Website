@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.1.5
+// @version      0.1.6
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -13,7 +13,7 @@ var _bbd_observer;
 var ordering = new Map();
 
 function loadObserver() {
-    let attach = $('.Main-Body')[0];
+    let attach = $('.Main')[0];
     if (!attach) {
         // Wait for site load
         setTimeout(loadObserver, 50);
