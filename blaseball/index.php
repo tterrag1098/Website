@@ -67,7 +67,7 @@
             </ul>
         </p>
         <details>
-            <summary style="cursor:pointer;">Expand to view the full code.<br/><br/>This is a small script that is purely clientside. It collects no information and makes no network requests except to download jQuery from cdnjs, a trusted JavaScript CDN.</summary>
+            <summary style="cursor:pointer;">Expand to view the full code.<br/><br/>This is a small script that is purely clientside. It collects no information and makes no network requests except to download jQuery (from cdnjs, a trusted JavaScript CDN) and FontAwesome (a well known icons library).</summary>
             <pre><?= htmlspecialchars(file_get_contents('blaseball-dashboard.user.js')) ?></pre>
         </details>
         <p>go pies</p>
