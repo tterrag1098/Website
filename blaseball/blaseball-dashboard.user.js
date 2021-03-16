@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.2.0
+// @version      0.2.1
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -516,8 +516,8 @@ function isInFullScreen() {
 .Batting-Indicator {
     display: inline-block;
     width: 20px;
+    line-height: 0;
     margin-left: 5px;
-    margin-top: -100px;
 }
 
 /* Remove team color from at-bat indicator */

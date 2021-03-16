@@ -270,6 +270,10 @@
     flex: 1 1 0;
 }
 
+.large-widgets .GameWidget {
+    min-width: 450px;
+}
+
 /* Give hitter/pitcher names a little more room to breathe */
 .Widget-Display-Body {
     grid-template-columns: 100px auto;
@@ -300,6 +304,7 @@
         padding: 0;
     }
 }
+
 /* Add an invisible border as a placeholder for the score highlight */
 .theme-dark .GameWidget {
     border: 3px solid black;
@@ -317,8 +322,8 @@
 .Batting-Indicator {
     display: inline-block;
     width: 20px;
+    line-height: 0;
     margin-left: 5px;
-    margin-top: -100px;
 }
 
 /* Remove team color from at-bat indicator */
@@ -328,4 +333,21 @@
 
 .theme-light .Batting-Indicator {
     fill: black;
+}
+
+.bbd-buttons {
+    font-size: 32px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 4px;
+}
+
+.bbd-buttons button {
+    color: rgba(255, 255, 255, 0.25);
+    line-height: 40px;
+}
+
+.bbd-buttons button:hover {
+    color: white;
 }

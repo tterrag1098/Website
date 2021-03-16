@@ -59,6 +59,10 @@
         <a href="blaseball-dashboard.user.js">Install Userscript</a>
         </p>
         <p>
+            <h3>Changes in 0.2.1 (Published 2021-03-16) [UserScript Only]</h3>
+            <ul>
+                <li>Fixed position of batting indicator</li>
+            </ul>
             <h3>Changes in 0.2.0 (Published 2021-03-10)</h3>
             <ul>
                 <li>Added widget size and full screen buttons. Full screen should allow all 12 games to be visible on a standard 1080p 16:9 monitor.</li>
