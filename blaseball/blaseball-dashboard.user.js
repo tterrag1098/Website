@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.2.1
+// @version      0.2.2
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -454,6 +454,11 @@ function isInFullScreen() {
     display: none
 }
 /* End copied code */
+
+/* Hack to remove horizontal scrolling on Firefox */
+body {
+    overflow-x: hidden;
+}
 
 /* Add a forced width and margin to widgets */
 .GameWidget {

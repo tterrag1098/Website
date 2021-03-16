@@ -261,6 +261,11 @@
 }
 /* End copied code */
 
+/* Hack to remove horizontal scrolling on Firefox */
+body {
+    overflow-x: hidden;
+}
+
 /* Add a forced width and margin to widgets */
 .GameWidget {
     display: inline-block;

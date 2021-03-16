@@ -59,6 +59,10 @@
         <a href="blaseball-dashboard.user.js">Install Userscript</a>
         </p>
         <p>
+            <h3>Changes in 0.2.2 (Published 2021-03-16) [UserScript Only]</h3>
+            <ul>
+                <li>Fixed horizontal scrollbar appearing on Firefox</li>
+            </ul>
             <h3>Changes in 0.2.1 (Published 2021-03-16) [UserScript Only]</h3>
             <ul>
                 <li>Fixed position of batting indicator</li>
