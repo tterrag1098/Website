@@ -261,6 +261,28 @@
 }
 /* End copied code */
 
+/* Tighten up some margins/padding to free up space */
+.Widget-Display-Visual {
+    padding: 0 0 0 10px;
+}
+
+.Widget-ScoreBacking {
+    padding: 10px 0 0 0;
+}
+
+.Widget-Outs {
+    padding: 0 0 10px 0;
+}
+
+.Widget-Display-Body .Widget-Log {
+    min-height: 75px;
+}
+
+/* Fix maximum blaseball display */
+.Widget-Display-Visual-Max {
+    margin-top: 24px !important;
+}
+
 /* Hack to remove horizontal scrolling on Firefox */
 body {
     overflow-x: hidden;
@@ -284,15 +306,18 @@ body {
     grid-template-columns: 100px auto;
 }
 
-/* The game list does not have any class or ID so we have to just select the exact ul element */
-.Main-Body > div:not([class]) > ul:not([class]),
-.Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) { /* site bug? */
+/* The game list does not have any class or ID so we have to just select the exact element */
+.Main-Body > div:not([class]),
+.Main-Body > div:not([class]) > div:not([class]) { /* site bug? */
     /* Force the game list to 100% screen width */
     width: 100vw;
     margin-left: calc(-50vw + 509px); /* This inverses the padding on the parent div */
     padding-left: 15px;
     padding-right: 10px;
+}
 
+.Main-Body > div:not([class]) > ul:not([class]),
+.Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) {
     /* Make the list of widgets a flexbox so that they fill available space */
     display: flex;
     flex-wrap: wrap;
@@ -302,8 +327,8 @@ body {
 @media (max-width: 1080px) {
 
     /* Unapply forced width on mobile layout */
-    .Main-Body > div:not([class]) > ul:not([class]),
-    .Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) { /* site bug? */
+    .Main-Body > div:not([class]),
+    .Main-Body > div:not([class]) > div:not([class]) { /* site bug? */
         width: 100%;
         margin-left: 0;
         padding: 0;
@@ -342,17 +367,48 @@ body {
 
 .bbd-buttons {
     font-size: 32px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 4px;
 }
 
 .bbd-buttons button {
     color: rgba(255, 255, 255, 0.25);
-    line-height: 40px;
+    line-height: 0;
 }
 
 .bbd-buttons button:hover {
     color: white;
+}
+
+.bbd-widget-bar {
+    font-family: "Lora","Courier New",monospace,serif;
+    display: flex;
+    text-align: center;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.bbd-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: max-content;
+    background-color: #171717;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.bbd-widget.bets-widget > * {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.bbd-widget.bets-widget > .GameWidget-ScoreBet > .GameWidget-ScoreBet-Bet {
+    margin-left: 5px;
+}
+
+.bbd-widget.bets-widget .GameWidget-ScoreBet-Bet.no-winnings {
+    padding-right: 10px;
+    border-radius: 20px;
 }
