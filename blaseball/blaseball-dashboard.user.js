@@ -764,7 +764,6 @@ body {
     font-family: "Lora","Courier New",monospace,serif;
     display: flex;
     text-align: center;
-    max-width: max-content;
     margin: 0 auto;
     margin-bottom: 5px;
 }
