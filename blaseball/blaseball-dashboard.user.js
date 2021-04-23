@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blaseball Dashboard
 // @namespace    https://tterrag.com/
-// @version      0.3.0-beta
+// @version      0.3.0-beta+1
 // @description  A more compact and at-a-glance blaseball UI
 // @author       tterrag
 // @match        https://www.blaseball.com/*
@@ -689,8 +689,7 @@ body {
 }
 
 /* The game list does not have any class or ID so we have to just select the exact element */
-.Main-Body > div:not([class]),
-.Main-Body > div:not([class]) > div:not([class]) { /* site bug? */
+.Main-Body > div:not([class]) {
     /* Force the game list to 100% screen width */
     width: 100vw;
     margin-left: calc(-50vw + 509px); /* This inverses the padding on the parent div */
@@ -699,7 +698,7 @@ body {
 }
 
 .Main-Body > div:not([class]) > ul:not([class]),
-.Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) {
+.Main-Body > div:not([class]) > div:not([class]) > ul:not([class]) > ul:not([class]) { /* site bug, during playoffs there's some double nesting going on */
     /* Make the list of widgets a flexbox so that they fill available space */
     display: flex;
     flex-wrap: wrap;
@@ -709,8 +708,7 @@ body {
 @media (max-width: 1080px) {
 
     /* Unapply forced width on mobile layout */
-    .Main-Body > div:not([class]),
-    .Main-Body > div:not([class]) > div:not([class]) { /* site bug? */
+    .Main-Body > div:not([class]) {
         width: 100%;
         margin-left: 0;
         padding: 0;
@@ -763,6 +761,7 @@ body {
 .bbd-widget-bar {
     font-family: "Lora","Courier New",monospace,serif;
     display: flex;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 5px;
