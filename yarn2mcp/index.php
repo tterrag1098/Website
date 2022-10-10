@@ -29,8 +29,7 @@
 	<nav>
 		<a href="/">Home</a>
 		<a href="/k9">K9</a>
-		<a href="/lang2json">Lang to JSON Converter</a>
-        <a href="/yarn2mcp" class="selected">Yarn over MCP</a>
+		<a href="/portfolio">Portfolio</a>
 		<span class="separator"></span>
         <a href="https://discord.gg/e93JT7R">Discord</a>
 		<a href="https://github.com/tterrag1098/">GitHub</a>
@@ -40,6 +39,7 @@
 <body>
   <div id="mobile-wrapper">
   <div id="content">
+		<h1>This project is DEPRECATED. Please switch to official (mojang) mappings if you want parity between mod APIs.</h1>
 		<h2>What is this?</h2>
 		<p>
 			This service provides custom mappings for use when creating forge mods, that use the <a href="https://github.com/FabricMC/yarn">yarn</a> mapping data. Two artifacts are published daily:

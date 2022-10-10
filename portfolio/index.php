@@ -29,8 +29,7 @@
 	<nav>
 		<a href="/">Home</a>
 		<a href="/k9">K9</a>
-		<a href="/lang2json">Lang to JSON Converter</a>
-        <a href="/yarn2mcp">Yarn over MCP</a>
+		<a class="selected" href="/portfolio">Portfolio</a>
 		<span class="separator"></span>
         <a href="https://discord.gg/e93JT7R">Discord</a>
 		<a href="https://github.com/tterrag1098/">GitHub</a>
@@ -120,6 +119,22 @@
 		<p>
 			Smaller Minecraft mods that I have created, or had a large part in creating.
 		</p>
+
+		<div class="project mod">
+			<div class="header">
+				<h3 id="registrate">Registrate</h3> &mdash; Creator <span class="project-links"><a href="https://github.com/tterrag1098/Registrate">GitHub</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Not quite a mod, Registrate is a library for mods that aims to make managing game objects (known as "registration") much easier to use and organize. It implements a generic, extensible API for creating any type of game object, and built in helpers for the most commonly used ones.
+					</p>
+					<p>
+						It is used by many large projects, including Chisel (since 1.16), Create, and more.
+					</p>
+				</div>
+			</div>
+		</div>
 
 		<div class="project mod">
 			<div class="header">
@@ -247,10 +262,11 @@
 			<div class="desc">
 				<div class="text">
 					<p>
-						Not a mod, but a yearly weekend-long charity stream to raise money for hurricane repairs in the tropics, specifically Puerto Rico. The event takes place in Minecraft, as a hosted server that anyone can join for a minimum donation. The stream is 48 hours long, and offers wall-to-wall activities and giveaways.
+						Not a mod, but a yearly weekend-long charity stream to raise money for a variety of causes, all focused on climate change and how it impacts the tropical areas of the planet. 
+						The event takes place in Minecraft, as a hosted server that anyone can join for a minimum donation. The stream is 48 hours long, and offers wall-to-wall activities and giveaways.
 					</p>
 					<p>
-						In just 2 years we have raised over $45,000 for relief efforts. Come join us for LoveTropics 2019, which we're planning to be bigger and better than ever before!
+						In 5 years we have raised over <strong>$200,000</strong> for relief efforts. Come join us for LoveTropics 2022, which we're planning to be bigger and better than ever before!
 					</p>
 				</div>
 			</div>
