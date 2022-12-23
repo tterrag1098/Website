@@ -2,14 +2,14 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="../root.css">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 
-  <title>tterrag - Portfolio</title>
+  	<title>tterrag - Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="tterrag">
+	<meta name="author" content="tterrag">
 	<meta name="description" content="Portfolio">
 	<meta name="theme-color" content="#4e9745">
 
@@ -27,9 +27,9 @@
 </head>
 <header>
 	<nav>
-		<a href="/">Home</a>
-		<a href="/k9">K9</a>
-		<a class="selected" href="/portfolio">Portfolio</a>
+		<a href="../">Home</a>
+		<a href="../k9">K9</a>
+		<a class="selected" href="../portfolio">Portfolio</a>
 		<span class="separator"></span>
         <a href="https://discord.gg/e93JT7R">Discord</a>
 		<a href="https://github.com/tterrag1098/">GitHub</a>
@@ -40,6 +40,32 @@
   <div id="mobile-wrapper">
   <div id="content">
 		<h1>Portfolio</h1>
+		<div id="preamble">
+			<p>
+				I have worked on a lot of projects, the ones on this page mostly relate to the game Minecraft and modifications / other projects for it.
+			</p>	
+			<p>
+				If you are looking for information on my professional work, please reach out directly.
+			</p>
+		</div>
+		<h2 id="special-feature"><a class="anchor" href="#special-feature">#</a>Special Feature</h2>
+		<div class="project">
+			<div class="header">
+				<h3>LoveTropics</h3> &mdash; Co-Organizer <span class="project-links"><a href="https://lovetropics.com/">Website</a>
+			</div>
+			<div class="desc">
+				<div class="text">
+					<p>
+						Not a mod, but a yearly weekend-long charity stream to raise money for a variety of causes, all focused on climate change and how it impacts the tropical areas of the planet. 
+						The event takes place in Minecraft, as a hosted server that anyone can join for a minimum donation. The stream is 48 hours long, and offers wall-to-wall activities and giveaways.
+					</p>
+					<p>
+						In 6 years we have raised over <strong>$250,000</strong> for relief efforts! Check out the website for information on future events, and details on past fundraisers.
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<h2 id="major-content-mods"><a class="anchor" href="#major-content-mods">#</a>Major Content Mods</h2>
 		<p>
 			Large Minecraft mods that I have created, or had a large part in creating.
@@ -254,23 +280,6 @@
 		<p>
 			One-off or discontinued projects I had large involvement with.
 		</p>
-
-		<div class="project">
-			<div class="header">
-				<h3>LoveTropics</h3> &mdash; Co-Organizer <span class="project-links"><a href="https://lovetropics.com/">Website</a>
-			</div>
-			<div class="desc">
-				<div class="text">
-					<p>
-						Not a mod, but a yearly weekend-long charity stream to raise money for a variety of causes, all focused on climate change and how it impacts the tropical areas of the planet. 
-						The event takes place in Minecraft, as a hosted server that anyone can join for a minimum donation. The stream is 48 hours long, and offers wall-to-wall activities and giveaways.
-					</p>
-					<p>
-						In 5 years we have raised over <strong>$200,000</strong> for relief efforts. Come join us for LoveTropics 2022, which we're planning to be bigger and better than ever before!
-					</p>
-				</div>
-			</div>
-		</div>
 
 		<div class="project mod">
 			<div class="header">

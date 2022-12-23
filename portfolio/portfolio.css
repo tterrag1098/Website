@@ -1,3 +1,11 @@
+strong {
+	color: white;
+}
+
+#preamble {
+	text-align: center;
+}
+
 #content {
 	margin-top: 75px;
 }

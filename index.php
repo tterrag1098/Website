@@ -22,9 +22,9 @@
 </head>
 <header>
   <nav>
-		<a class="selected" href="/">Home</a>
-		<a href="/k9">K9</a>
-		<a href="/portfolio">Portfolio</a>
+		<a class="selected" href=".">Home</a>
+		<a href="./k9">K9</a>
+		<a href="./portfolio">Portfolio</a>
 		<span class="separator"></span>
         <a href="https://discord.gg/e93JT7R">Discord</a>
 		<a href="https://github.com/tterrag1098/">GitHub</a>
